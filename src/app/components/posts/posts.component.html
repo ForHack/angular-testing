@@ -1,1 +1,6 @@
-<p>posts works!</p>
+<div *ngFor="let post of posts">
+  <app-post
+    [post]="post"
+    (delete)="delete($event)"
+  ></app-post>
+</div>
